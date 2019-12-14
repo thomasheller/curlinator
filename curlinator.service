@@ -1,0 +1,15 @@
+[Unit]
+Description=curlinator
+
+[Service]
+Type=simple
+WorkingDirectory=/var/curlinator
+ExecStart=/usr/local/bin/curlinator
+TimeoutStopSec=60
+User=curlinator
+Group=curlinator
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
