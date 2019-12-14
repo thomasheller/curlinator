@@ -61,3 +61,7 @@ curl 'http://localhost:8000/list'
 curl 'http://localhost:8000/status'
 ```
 
+Downloaded URLs will appear in `/var/curlinator`.
+
+Use `journalctl -fu curlinator` to follow systemd logs.
+
